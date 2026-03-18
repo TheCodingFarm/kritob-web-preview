@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Preview | TheCodingFarm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Jura:wght@300&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Racing+Sans+One&amp;family=Slabo+27px&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light-bg: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background: #fff;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--dark);
+            text-decoration: none;
+            font-family: 'Racing Sans One', cursive;
+        }
+
+        .logo span {
+            color: #008e4c;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 10% 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* App Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 4rem 10%;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        /* Footer Branding */
+        footer {
+            margin-top: 4rem;
+            padding: 4rem 10%;
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-branding {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-branding h4 {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://www.thecodingfarm.co.in" class="logo">The<span>Coding</span>Farm</a>
+    </header>
+
+    <section class="hero">
+        <h1>Project Staging Environment</h1>
+        <p>Preview the latest builds of your E-Commerce ecosystem. This environment is powered by TheCodingFarm CI/CD pipeline.</p>
+    </section>
+
+    <div class="grid">
+        <a href="./public/apps/user/index.html" class="card">
+            <span class="icon">🛍️</span>
+            <h3>Customer App</h3>
+            <p>Main store-front for public users. Experience the seamless shopping journey.</p>
+            <span class="btn">Launch Portal</span>
+        </a>
+
+        <a href="./public/apps/vendor/index.html" class="card">
+            <span class="icon">🏪</span>
+            <h3>Vendor Portal</h3>
+            <p>Seller dashboard to manage inventory, sales analytics, and store settings.</p>
+            <span class="btn">Launch Portal</span>
+        </a>
+
+        <a href="./public/apps/delivery/index.html" class="card">
+            <span class="icon">🚚</span>
+            <h3>Delivery App</h3>
+            <p>Order tracking and management system for the delivery fleet.</p>
+            <span class="btn">Launch Portal</span>
+        </a>
+
+        <a href="./public/apps/admin/index.html" class="card">
+            <span class="icon">🛡️</span>
+            <h3>Admin Panel</h3>
+            <p>Central control hub for platform management and system moderation.</p>
+            <span class="btn">Launch Portal</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-branding">
+            <h4>Built by TheCodingFarm</h4>
+            <p>Your collaborative technology partner for web, mobile, and AI solutions.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.thecodingfarm.co.in">Official Website</a>
+            <a href="mailto:contact@thecodingfarm.co.in">Support</a>
+        </div>
+        <p class="copyright">© 2026 TheCodingFarm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
